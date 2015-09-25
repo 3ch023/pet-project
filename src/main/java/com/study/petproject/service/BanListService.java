@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 /**
+ * Class represents service Api for ban lists manipulation.
  * Created by Mariia_Lukianets on 22.09.2015.
  */
 @Service

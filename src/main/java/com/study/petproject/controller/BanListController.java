@@ -20,6 +20,9 @@ public class BanListController {
     @Autowired
     private BanListService banListService;
 
+    /**
+     * @return All ban lists, stored in data storage
+    */
     @RequestMapping(path = "/all", method = RequestMethod.GET)
     public String showAll(Model model) {
         List<BanList> banLists = banListService.getAllBanLists();

@@ -1,0 +1,19 @@
+<!-- FORM (request is sent on 'lost focus' event and submit btn) -->
+
+<form class="form-signin">
+    <h2 class="form-signin-heading">New ban list</h2>
+    <label for="title" class="sr-only">Enter title</label>
+    <input type="?" id="title" class="form-control" placeholder="Spam" required="" autofocus="">
+
+    <label for="inputEmail" class="sr-only">Email address</label>
+    <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="">
+
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Add email</button>
+
+    <!-- block for editing items -->
+    <c:forEach var="item" items="${lists}" >
+
+    <!-- //block for editing items -->
+</form>
+
+<!-- //FORM -->
