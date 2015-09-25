@@ -20,24 +20,31 @@ public class BanListController {
     @Autowired
     private BanListService banListService;
 
-    /**
-     * @return All ban lists, stored in data storage
-    */
-    @RequestMapping(path = "/all", method = RequestMethod.GET)
+    @RequestMapping(method = RequestMethod.GET)
     public String showAll(Model model) {
         List<BanList> banLists = banListService.getAllBanLists();
         model.addAttribute("listName", banLists.get(0).getName());
         return "all-ban-lists";
     }
-
-
-    @RequestMapping(path = "/create", method = RequestMethod.GET)
-    public String create() {
-        return "create-ban-list";
-    }
-
-    @RequestMapping(path = "/create",method = RequestMethod.POST)
-    public void save(@RequestParam(name = "listName") String listName, Model model) {
-
-    }
+//
+//    /**
+//     * @return All ban lists, stored in data storage
+//    */
+//    @RequestMapping(path = "/all", method = RequestMethod.GET)
+//    public String showAll(Model model) {
+//        List<BanList> banLists = banListService.getAllBanLists();
+//        model.addAttribute("listName", banLists.get(0).getName());
+//        return "all-ban-lists";
+//    }
+//
+//
+//    @RequestMapping(path = "/create", method = RequestMethod.GET)
+//    public String create() {
+//        return "create-ban-list";
+//    }
+//
+//    @RequestMapping(path = "/create",method = RequestMethod.POST)
+//    public void save(@RequestParam(name = "listName") String listName, Model model) {
+//
+//    }
 }
