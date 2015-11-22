@@ -17,7 +17,7 @@ import java.util.List;
 @Controller
 @RequestMapping("/banlist")
 public class BanListController {
-    @Autowired
+    //@Autowired
     private BanListService banListService;
 
     @RequestMapping(method = RequestMethod.GET)

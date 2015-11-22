@@ -13,7 +13,7 @@ import java.util.List;
  */
 @Service
 public class BanListService {
-    @Autowired
+    //@Autowired
     private BanListRepository repository;
 
     public List<BanList> getAllBanLists() {

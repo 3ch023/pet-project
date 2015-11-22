@@ -34,14 +34,16 @@
 
     <context:component-scan base-package="com.study.petproject" />
 
-    <mongo:mongo id="mongoConnection" host="EPUAKHAW0550" port="27017" write-concern="1"/>
+    <!--<mongo:mongo id="mongoConnection" host="EPUAKHAW0550" port="27017" write-concern="1"/>-->
 
-    <beans:bean id="banListTemplate" class="org.springframework.data.mongodb.core.MongoTemplate">
-        <beans:constructor-arg value="mongoConnection"/>
-        <!--<beans:constructor-arg  name="databaseName" value="banlistdatabase"/>-->
-    </beans:bean>
+    <!--<beans:bean id="banListTemplate" class="org.springframework.data.mongodb.core.MongoTemplate">-->
+        <!--<beans:constructor-arg ref="mongoConnection"/>-->
+        <!--&lt;!&ndash;<beans:constructor-arg  name="databaseName" value="banlistdatabase"/>&ndash;&gt;-->
+    <!--</beans:bean>-->
 
-    <mongo:repositories base-package="com.study.petproject.repository" mongo-template-ref="banListTemplate">
+    <!--<mongo:repositories base-package="com.study.petproject.repository" mongo-template-ref="banListTemplate">-->
 
-    </mongo:repositories>
+    <!--</mongo:repositories>-->
+
+
 </beans:beans>
