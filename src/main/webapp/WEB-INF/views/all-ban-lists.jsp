@@ -7,11 +7,9 @@
 
 
 <body>
-<!-- HEADER -->
-<!-- //HEADER -->
-
 <!-- CONTENT -->
-<h2>Hello ${listName}</h2>
+
+<h2>Hello all banlists!</h2>
 <!-- //CONTENT -->
 
 <%@ include file="jspf/footer-libs.jspf" %>
